@@ -7,6 +7,8 @@ a's map in second for loop, as 2nd 4 in array b will be counted again
 */
 
 #include<bits/stdc++.h>
+#include <iterator>
+#include <iostream>
 #include<set>
 using namespace std;
 int NumberofElementsInIntersection (int a[], int b[], int n, int m );
@@ -33,11 +35,11 @@ int NumberofElementsInIntersection (int a[], int b[], int n, int m )
     **************************
     
     METHOD 2*/
-    set <int> s1{std::begin(a),std::end(a)};
-    set <int> s2{std::begin(b),std::end(b)};
+    set <int> s1(a,a+n);
+    set <int> s2(b,b+m);
     set<int> intersect;
     set_intersection(s1.begin(), s1.end(), s2.begin(), s2.end(),std::inserter(intersect, intersect.begin()));
-    return intersect.size()
+    return intersect.size();
 }
 
 // { Driver Code Starts.
