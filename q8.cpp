@@ -13,7 +13,7 @@ int maxSubarraySum(int arr[], int n){
     int curr_max = arr[0], max_so_far = arr[0],i;
     for(i=1;i<n;i++)
     {
-        curr_max = max(arr[i], curr_max+arr[i]);
+        curr_max = max(arr[i], curr_max+arr[i]); // so that if we hav negative val in curr_max, we dont take it
         max_so_far = max(curr_max, max_so_far);
     }
     return max_so_far;
