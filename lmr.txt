@@ -1,0 +1,4 @@
+Python : 
+1. sorted() can sort list of lists
+2. a.sort(reverse=True) for descending
+3. swap stuff like -> a,b = b,a 
