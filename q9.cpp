@@ -13,7 +13,7 @@ class Solution{
 public:
     int getMinDiff(int arr[], int n, int k) {
         // code here
-        int ans,big,small,adder,subber,i;
+        int ans,big,small,mx,mi,i;
         sort(arr,arr+n);
         ans = arr[n-1] - arr[0];
         // small = arr[0] + k;
@@ -29,7 +29,9 @@ public:
         {
             if(arr[i]-k>=0)
             {
-                ans = min(ans,max(arr[n-1]-k,arr[i-1]+k)-min(arr[0]+k,arr[i]-k));
+                mx = max(arr[n-1]-k,arr[i-1]+k);
+                mi = min(arr[0]+k,arr[i]-k);
+                ans = min(ans,mx-mi);
             }
         }
         return ans;

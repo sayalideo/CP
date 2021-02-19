@@ -37,7 +37,7 @@ using namespace std;
 //     int* jumps = new int[n];
 //     int min;
  
-//     // Minimum number of jumps needed
+//     // Minimum number of jumps needed    
 //     // to reach last element from last
 //     // elements itself is always 0
 //     jumps[n - 1] = 0;

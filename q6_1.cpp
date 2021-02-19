@@ -42,8 +42,6 @@ int NumberofElementsInIntersection (int a[], int b[], int n, int m )
     return intersect.size();
 }
 
-// { Driver Code Starts.
-
 int main()
 {
 	int t;
