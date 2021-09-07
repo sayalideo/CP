@@ -2,3 +2,44 @@ Python :
 1. sorted() can sort list of lists
 2. a.sort(reverse=True) for descending
 3. swap stuff like -> a,b = b,a 
+4. https://www.geeksforgeeks.org/defaultdict-in-python/
+5. for key,val in d.items(): to iterate defaultdict
+7. m,n = list(map(int,input().strip().split())) ... lookout for order of args in map
+8. Reverse a list => A = A[::-1]
+9. from collections import Counter. mp = Counter(arr)
+
+C++ (and C): 
+1. https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/
+2. cin>>a>>b works. cin>>a,b does not work
+3. array size of 100000 does not work sometimes. In such a case, use array ptr. 
+4. map.clear() shud be used within testcase loop to clear previous case map from memory
+5. sort(arr, arr + n); sort in cpp
+6. For sorting vector ... sort(v.begin(), v.end()); 
+   For sortin 2D vector ... written in file sort2Dvec.cpp
+7. vector.size() to get number of elements
+8. unordered_map<int, int> m; can be used as dict with defualt value 0
+   directly by doing m[1]++; w/o any background eg code : https://www.geeksforgeeks.org/count-pairs-with-given-sum/
+9. Set intersection in q19. convert frm int[] to set and set to vector
+   set<int> intersect;
+   set_intersection(s1.begin(), s1.end(), s2.begin(), s2.end(),
+                 std::inserter(intersect, intersect.begin()));
+10. minHeapNode *narr = new minHeapNode[N]; where minHeapNode is a struct. Don't initialize arr as minHeapNode[N]
+11. To find size of character array : size_t s = sizeof(arr) / sizeof(arr[0]);
+12. To find size of string : int s = this_string.length() // size() is also valid
+13. https://www.geeksforgeeks.org/hash-table-vs-stl-map/
+14. Finding substring in a string : https://www.geeksforgeeks.org/string-find-in-cpp/
+15. https://www.geeksforgeeks.org/new-vs-malloc-and-free-vs-delete-in-c/ 
+16. sorting array/vector in descending => sort(a,  a+n,  greater<int>())
+17. next_permutation() see in 'must do' nextPermutation.cpp
+18. memset() ... see formPalindrome.cpp in 'must do'.
+19. https://www.geeksforgeeks.org/strcpy-in-c-cpp/ 
+20. *p++ This first returns the value stored at pointer p and then increments the pointer(and not the value).
+21. ++*p++ Here precedence is 1.postfix, 2.prefix 3.dereference. Thus, first increment value of p. And then increment pointer p.
+22. In std::stack in stl, s.pop() gives no err on stack empty but s.top() gives error on stack empty.
+23. sizeof(pointer) will return 4 or 8 depending on 32 bit/ 64 bit system
+
+ 
+Notes : 
+1. Python uses Timsort : Merge + Insertion        | O(nlogn), Omega(n)
+2. CPP uses Introsort  : Insertion + Quick + Heap | O(nlogn)
+

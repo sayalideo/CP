@@ -4,11 +4,18 @@
 using namespace std;
 int main()
 {
-    map<int,int> m;
+    map<int,int> m; // by default 0 value is assigned
+    int i;
     m[1] = 0;
     m[2] = 0;
     m[1] = m[1] + 1;
-    for ( auto item : m )
+
+  
+  for(i=0;i<10;i++)
+  {
+      m[i] += 1;  // by default 0 value is assigned
+  }
+      for ( auto item : m )
     {
         //item.first is the key
         cout << item.first << " goes ";

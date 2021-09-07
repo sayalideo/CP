@@ -46,7 +46,9 @@ long long int merge(long long arr[], long long temp[], long long left, long long
     {
         arr[i] = temp[i];
     }
+    cout<<"low : "<<left<<",  mid : "<<mid<<",  high : "<<right<<",  temp : "<<count<<"\n";
     return count;
+    
 }
 
 long long int mergeSort(long long arr[], long long temp[], long long left, long long right)

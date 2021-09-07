@@ -1,0 +1,24 @@
+DP
+1. Optimal Substructure
+2. Overlapping Subproblems
+3. 
+
+Theory
+1. OOP in c++
+2. Singleton Class, Operator overloading, pure virtual functions, bitwise operators - Qualcomm
+3. Revise QuickSort
+
+Puzzles
+1. GFG 
+2. Jar Puzzles
+3. https://bit.ly/3jueLZd
+
+Tricks : 
+1. https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+2. https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/
+3. See if two elements in an array sum up to a given value in O(n) time
+   https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/
+4. https://www.geeksforgeeks.org/binary-search/
+
+Tips : 
+1. Focus on C, OS, OOPS. 

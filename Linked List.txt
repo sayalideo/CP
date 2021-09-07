@@ -1,0 +1,13 @@
+When we pass a pointer in a function, like 
+Node *n;
+n.ele = 5;
+printthisnode(n);
+Actually, another pointer is passed in the func that points to the same location.
+Thus if we change the pointer in the function like...
+void printthisnode(Node *n)
+{
+    n = n->next;
+}
+And in main, print the node.ele, it still outputs 5.
+
+************************************************************
